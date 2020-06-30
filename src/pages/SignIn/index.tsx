@@ -67,6 +67,7 @@ const SignIn: React.FC = () => {
 
         Alert.alert(`🎉🧔 GoBarber 💇‍♂️️💈️`, `Bem vindo ao app`);
       } catch (err) {
+        console.log('err: ', err);
         if (err instanceof Yup.ValidationError) {
           const errors = getValidationErrors(err);
 
